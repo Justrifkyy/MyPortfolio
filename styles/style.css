@@ -1,11 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
-
 :root {
-  --primaryTextColor: #232e35; /* Untuk title atau judul */
-  --secondaryTextColor: #656d72; /* Untuk text biasa seperti paragraph contohnya */
+  --primaryTextColor: #000000; /* Untuk title atau judul */
+  --secondaryTextColor: #090909; /* Untuk text biasa seperti paragraph contohnya */
 
   --borderColor: #f1f1f1;
-  --lineColor: #d9d9d9; /* untuk line di pre-title */
+  --lineColor: #c8c8c8; /* untuk line di pre-title */
 
   --primaryBackgroundColor: #fff;
   --secondaryBackgroundColor: #fbfbfb;
@@ -27,7 +25,7 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 h1,
@@ -73,15 +71,17 @@ a {
 
 /* Buttons */
 .btn {
-  padding: 1rem 1.5rem;
+  padding: 0.5rem 1rem;
   background: white;
-  border: 1.5px solid var(--borderColor);
   cursor: pointer;
   transition: 0.2s ease-in-out;
+  border-radius: 20%;
+  border: none;
+  font-size: 1rem;
 }
 
 .btn:hover {
-  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  box-shadow: rgb(255, 0, 0) 0px 3px 5px;
 }
 
 /* Titles */
@@ -180,16 +180,13 @@ nav ul li a {
   grid-template-columns: 1fr 1fr;
   /* We're not going to use automatic template columns, because we need to know when the columns is go below. So we can exchange the order of the element */
   align-items: center;
+  text-align: justify;
 }
 
 .hero-name {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
   margin: 0.5rem 0 1rem;
-}
-
-.hero-name span {
-  color: var(--primaryIconColor) !important;
 }
 
 .hero-right img {
@@ -397,7 +394,7 @@ nav ul li a {
 .contact-form textarea {
   width: 100%;
   padding: 0.75rem 1.3rem;
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
   background: var(--secondaryBackgroundColor);
   border: 1px solid var(--borderColor);
   border-radius: 3px;
